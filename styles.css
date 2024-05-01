@@ -1,0 +1,148 @@
+/* Reset some default browser styles */
+body, h1, h, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #cc5213;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-bottom: 3.5%;
+    color: #ffffff;
+    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #cc5213;
+    color: #ffffff;
+    text-align: center;
+    padding: 150px 0; /* Increased padding */
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+/* Center the logo */
+footer img {
+    display: block;
+    margin: 0 auto;
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Center text */
+footer p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+}
+
+/* Left text */
+.left-text {
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 46.1%; /* Adjust distance from left */
+    transform: translateY(-50%);
+    font-size: 17px;
+    transition: left 0.3s ease; /* Add transition for left property */
+}
+
+/* Right text */
+.right-text {
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    right: 43.1%; /* Adjust distance from right */
+    transform: translateY(-50%);
+    font-size: 17px;
+    transition: right 0.3s ease; /* Add transition for right property */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* Adjust left text for smaller screens */
+    .left-text {
+        left: 32%; /* Reduce distance from left */
+    }
+
+    /* Adjust right text for smaller screens */
+    .right-text {
+        right: 18%; /* Reduce distance from right */
+    }
+}
+
+
+
+
+
+/* Fancy styling for game */
+#tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #ffffff;
+}
